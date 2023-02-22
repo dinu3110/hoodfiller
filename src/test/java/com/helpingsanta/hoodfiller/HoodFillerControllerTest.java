@@ -7,12 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -24,8 +22,7 @@ import com.helpingsanta.hoodfiller.model.Presents;
 import com.helpingsanta.hoodfiller.service.HoodFillerService;
 import com.helpingsanta.hoodfiller.service.PresentsService;
 
-@DataJpaTest
-@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest
 class HoodFillerControllerTest {
 
 	@InjectMocks
